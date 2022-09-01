@@ -1,2 +1,3 @@
 print('Hello World!')
-print('Hello wwww!')
+print('Hello WWW!')
+print('Hello Python')

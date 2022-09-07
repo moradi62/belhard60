@@ -10,4 +10,4 @@ res = (num_1 + num_2 + num_3)/3
 print("{:.3f}".format(res))
 
 #Второй вариант
-print(round(res, 5)) #c round не покажет несколько нулей после запетой
+print(round(res, 3)) #c round не покажет несколько нулей после запетой

@@ -1,13 +1,13 @@
-# Пользователь вводит 3 числа, найти среднее арифмитическое с точность 3
+# Пользователь вводит 3 числа, сказать сколько из них положительных
+# и сколько отрицательных
 
+num_1 = input('Number 1: ')
+num_2 = input('Number 2: ')
+num_3 = input('Number 3: ')
 
-num_1 = float(input('Number 1: '))
-num_2 = float(input('Number 2: '))
-num_3 = float(input('Number 3: '))
-res = num_1 + num_2 + num_3
+res_minus = num_1.count('-') + num_2.count('-') + num_3.count('-')
+res_plus = 3 - res_minus
 
-#Первый вариант
-print("{:.3f}".format(res))
+print('Количество отрицательных чисел: ', res_minus)
+print('Количество положительных чисел: ', res_plus)
 
-#Второй вариант
-print(round(res, 5)) #c round не покажет несколько нулей после запетой

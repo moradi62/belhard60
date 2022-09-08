@@ -5,9 +5,9 @@ num_1 = input('Number 1: ')
 num_2 = input('Number 2: ')
 num_3 = input('Number 3: ')
 
-res_zero = (num_1 ==0) + (num_2 ==0) + (num_3 ==0)
-res_minus = int(num_1.startswith('-') + num_2.startswith('-') + num_3.startswith('-'))-res_zero
-res_plus = 3 - int(res_minus)
+res_zero = int((float(num_1) == 0) + (float(num_2) == 0) + (float(num_3) == 0))
+res_minus = int(num_1.startswith('-') + num_2.startswith('-') + num_3.startswith('-'))
+res_plus = 3 - res_minus - res_zero
 
 print('Количество отрицательных чисел: ', res_minus)
 print('Количество положительных чисел: ', res_plus)

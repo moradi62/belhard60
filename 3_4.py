@@ -14,9 +14,9 @@
 # print('Количество 0: ', res_zero)
 
 #Второй вариант
-num_1 = int(input('Number 1: '))
-num_2 = int(input('Number 2: '))
-num_3 = int(input('Number 3: '))
+num_1 = float(input('Number 1: '))
+num_2 = float(input('Number 2: '))
+num_3 = float(input('Number 3: '))
 
 res_zero = (num_1 == 0) + (num_2 == 0) + (num_3 == 0)
 res_plus = (num_1 > 0) + (num_2 > 0) + (num_3 > 0)

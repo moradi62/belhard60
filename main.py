@@ -52,6 +52,73 @@
 # #b.add(1) dont work
 # print(a,b)
 
-a = [1, 2, 3, 4, 2, 1]
-print(a)
-print(set(a))
+# a = [1, 2, 3, 4, 2, 1]
+# print(a)
+# print(set(a))
+
+####################### Function def
+# def func(x, y):
+#     res = x * y
+#     return res
+#def func(*args > tuple   **args > dict)
+
+#lambda
+# add = lambda x , y: 2*x+2*y
+#
+# print(add(2,3))
+#
+# print((lambda x, y: x+y)(2,5))
+
+####################### try / except
+# num1 = int(input('num1'))
+# num2 = int(input('num2'))
+#
+# try:
+#     res = num1 / num2
+# except ZeroDivisionError:
+#     print('oooooooo')
+#     res = 0
+# print(res)
+
+# try:
+#     in_ = int(input('num: '))
+# except ValueError:
+#     print('NOT Number')
+#     in_ = 0
+# else:
+#     print('если не будет ошибки')
+# finally:
+#     print('выполняетсф 100%')
+# print(in_)
+
+######################### FILE
+f = open("test.txt")    # open file in current directory
+f = open("C:/Python38/README.txt")  # specifying full path
+f = open("test.txt")      # equivalent to 'r' or 'rt'
+f = open("test.txt",'w')  # write in text mode
+f = open("img.bmp",'r+b') # read and write in binary mode
+f = open("test.txt", mode='r', encoding='utf-8')
+f = open("test.txt", encoding = 'utf-8')
+# perform file operations
+f.close()
+try:
+   f = open("test.txt", encoding = 'utf-8')
+   # perform file operations
+finally:
+   f.close()
+
+with open("test.txt", encoding = 'utf-8') as f:
+   # perform file operations
+
+with open("test.txt", 'w', encoding='utf-8') as f:
+    f.write("my first file\n")
+    f.write("This file\n\n")
+    f.write("contains three lines\n")
+
+
+f = open('command.txt', 'r+t')
+f.write('Hi\nHELLO WORLD')
+for line in f:
+    print(line)
+f.close()
+

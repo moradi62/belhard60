@@ -36,5 +36,93 @@ import setuptools
 # bb = aa.insert(2, num_str[3])
 #
 # print(aa)
-print('\x45')
-print('\u0105')
+# print('\x45')
+# print('\u0105')
+#جمع المت های لیست ###################################
+# data = [0, 1, -1, 3, -4, 0]
+# i,j = 0,0
+# while i < len(data):
+#     j = j + data[i]
+#     i += 1
+# print(j)
+################################## append
+
+# data = [2, 4, 4, 4, 9]
+# print(data)
+# data.append(5)
+# print('APPEND : 5', data)
+# data.insert(2, 3)
+# print('INSERT 3 : ', data)
+# print(data.pop(2))
+# print('POP INDEX 2', data)
+# data.remove(4)
+# print('REMOVE 4 : ', data)
+#################################### СПИСОК ДОБАВЛЕНИЕ - СОРТИРОВКА - УДАЛЕНИЕ ВЫБРОСА
+# values = []
+#
+# line = input('Input numbers. For exit press Enter: ')
+# while line != '':
+#     num = int(line)
+#     values.append(num)
+#     line = input('Input numbers. For exit press Enter: ')
+# print('Your enter list: ',values)
+# print()
+# line = int(input('Input numbers of remove max and min value: '))
+#
+# i = 1
+# rem_values = []
+# while i <= line:
+#     rem_values.append(values.pop(values.index(max(values))))
+#     rem_values.append(values.pop(values.index(min(values))))
+#     i += 1
+# print('Values : ', values)
+# print()
+# print('Removed values : ', sorted(rem_values))
+#
+#
+# # values.sort(reverse=True)
+# print('Your enter list: ',values)
+
+# search = int(input('Enter Number for find in list: '))
+# if search in values:
+#     print('In list ', search, ' index is = ', values.index(search))
+# else:
+#     print('NOT Find ', search, ' in list')
+# ######################################################## ИЗБАВЛЕНИЕ ОТ ДУБЛИКАТОВ
+#
+# data = []
+# line = input('Emnter numbers: ')
+# while line != '':
+#     data.append(line)
+#     line = input('Emnter numbers: ')
+#
+# print('All elements of list ', data)
+# lenn = len(data)
+# for i in range(1 ,lenn):
+#     if data.count(data[lenn-i])>1:
+#         data.pop(i)
+# print('Dublicate removed elements of list ', data)
+
+
+######################################################## ОТРИЦАТЕЛЬНЫЕ - ПОЛОЖИТЕЛЬНИЕ И НУЛЕЙ
+
+data = []
+line = input('Emnter numbers: ')
+while line != '':
+    data.append(int(line))
+    line = input('Emnter numbers: ')
+
+print('All elements of list ', data)
+lenn = len(data) - 1
+buf_list_m = []
+buf_list_z = []
+for i in range(0, lenn):
+    if data[lenn - i] < 0:
+        buf_list_m.append(data.pop(lenn - i))
+    elif data[lenn - i] == 0:
+        buf_list_z.append(data.pop(lenn - i))
+
+buf_list_m.extend(buf_list_z)
+buf_list_m.extend(data)
+
+print('+ _ 0 :', buf_list_m)

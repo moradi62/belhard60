@@ -1,3 +1,4 @@
-Hi
-HELLO WORLDHi
-HELLO WORLD
+txt = 'hello world'
+for i, j in enumerate(txt):
+    print(i, j)
+--------------------

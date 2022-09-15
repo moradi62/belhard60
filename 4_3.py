@@ -13,4 +13,10 @@ for elements in range(0, inp_num):
 
 print(dic.items())
 
+#2###################################
+n = int(input())
+users = {i: {'name:': input(), 'email: ': input()} for i in range(0,n)}
+print(users)
+
+
 

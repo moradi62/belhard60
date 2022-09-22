@@ -4,11 +4,11 @@
 
 dic = {}
 
-words = input('Enter your text: ').islower()
+words = input('Enter your text: ').lower()
 
 for i in words:
-    if i == ' ':
-        continue
+    # if i == ' ':
+    #     continue
     dic[i] = words.count(i)
 
 print('Словарь вхождении буква :\n', dic)

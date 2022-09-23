@@ -2,6 +2,7 @@
 # образом, чтобы остались только строки, использование дополнительного списка
 # незаконно
 
-txt = ['a', '','2', '4', 'd']
-txt = list(filter(lambda st: st.isalpha(), txt))
+txt = ['a', 2, '4', 'd']
+
+txt = list(filter(lambda st: isinstance(st, str) and st.isalpha(), txt))
 print(txt)

@@ -24,8 +24,6 @@ def bin_to_dec(b: int):
         b = b//10
     return dis_res
 
-
-
 num = int(input('Напишите цифру: '))
 
 print(f'Двоичное число {num} равно {dec_to_bin(num)}')

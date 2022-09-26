@@ -15,7 +15,6 @@ def sum_num(lst:list) -> list:
             res_lst.append(lst[ind - 1] + lst[ind + 1])
     return res_lst
 
-
 num_lst = []
 
 for rnd in range(0,10):

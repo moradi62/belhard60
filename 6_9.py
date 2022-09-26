@@ -15,7 +15,6 @@ for ind in range(0, 2):
     users[ind] = dict(name=input('Name: '), surname=input('Surnamee: '),
                                       tel=int(input('Tel: ')), email=input('Email: '))
 
-
 for k,v in users.items():
     if check_dict(v):
         print(f'У пользователя {k} по имени {v["name"]} поле: EMAIL пуста')

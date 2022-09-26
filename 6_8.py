@@ -5,6 +5,7 @@ country = {'Belarus':['Minsk', 'Grodno', 'Vitebsk', 'Brest', 'Mogiliev'],
            'USA':['NY', 'LA', 'Chicago', 'California'],
            'Japan':['Yokohama', 'Osaka', 'Nagoya']}
 
+
 src = input('Search your City: ')
 
 for k, v in country.items():

@@ -10,8 +10,6 @@ def replace_list(lst: list, n=0):
         return lst
 
 
-
-
 my_list = [1,2,3,4,5,6,7]
 num_ch = int(input('Количество перемещении: '))
 print(replace_list(my_list, num_ch))

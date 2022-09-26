@@ -9,7 +9,6 @@ def my_rev(lst):
         lst[-1-i] = temp
     return lst
 
-
 lst = [1, 2, 3 , 4 ,5]
 print(my_rev(lst))
 
